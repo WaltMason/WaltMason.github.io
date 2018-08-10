@@ -48,16 +48,17 @@
 
                 <ul class="header__social">
                     <li>
-                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="fb.me/RevitTailor"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="www.linkedin.com/in/walter-mason"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://plus.google.com/115928546801133212642"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="www.pinterest.com/
+revittailor"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                     </li>
                 </ul> <!-- end header__social -->
 
@@ -85,28 +86,27 @@
                     <h2 class="header__nav-heading h6">Site Navigation</h2>
 
                     <ul class="header__nav">
-                        <li><a href="index.html" title="">Home</a></li>
+                        <li class="current"><a href="index.html" title="">Home</a></li>
                         <li class="has-children">
                             <a href="#0" title="">Categories</a>
                             <ul class="sub-menu">
-                            <li><a href="category.html">Knowledge</a></li>
-                            <li><a href="category.html">Best Practices</a></li>
-                            <li><a href="category.html">Tips and Tricks</a></li>
-                            <li><a href="category.html">Tutorials</a></li>
-                            <li><a href="category.html">Revit</a></li>
-                            <li><a href="category.html">Tailorization</a></li>
+                            <li><a href="category-know.html">Knowledge</a></li>
+                            <li><a href="category-practices.html">Best Practices</a></li>
+                            <li><a href="category-tips.html">Tips+Tricks</a></li>
+                            <li><a href="category-tutorial.html">Tutorials</a></li>
+                            <li><a href="category-families.html">Families</a></li>
                             </ul>
                         </li>
-                        <li class="has-children current">
-                            <a href="#0" title="">Blog</a>
+                        <li class="has-children">
+                            <a href="resources.html" title="">Resources</a>
                             <ul class="sub-menu">
-                            <li><a href="single-video.html">Video Post</a></li>
-                            <li><a href="single-audio.html">Audio Post</a></li>
-                            <li><a href="single-gallery.html">Gallery Post</a></li>
-                            <li><a href="single-standard.html">Standard Post</a></li>
+                            <li><a href="resources-architecture.html">Architectural Resources</a></li>
+                            <li><a href="resources-rformulas.html">Revit Formulas</a></li>
+                            <li><a href="resources-excel.html">Excel Formulas</a></li>
+                            <li><a href="resources-rcontent.html">Revit Content</a></li>
                             </ul>
                         </li>
-                        <li><a href="style-guide.html" title="">Styles</a></li>
+                        <li><a href="tutorials.html" title="">Tutorials</a></li>
                         <li><a href="about.html" title="">About</a></li>
                         <li><a href="contact.html" title="">Contact</a></li>
                     </ul> <!-- end header__nav -->
@@ -155,54 +155,40 @@
 
                 <p class="lead">Parameters can be a bit confusing in Revit, sometimes even to the seasoned user.  For the new to Revit user they can seem like another language, especially in regard to parameter types, schedules, and how they work. It doesn’t help that in a sense, there are three types of types of parameters, confusion intended.</p>
                 
-                <p>To clear things up decided I needed to put a guide together.   The problem is that as soon as I started to put it together I realized that parameters in general have so many facets, that to explain them all would need to be more of a book than a guide, and frankly even I would be bored reading a book on parameters.  Therefore, I decided to break it down into a series of mini guides based on both of your level of experience and then add some separate resources that break them down.  That way you can get quick overviews or go directly into the areas you need.
+                <p>To clear things up decided I needed to put a guide together.   The problem is that as soon as I started to put it together I realized that parameters in general have so many facets, that to explain them all would need to be more of a book than a guide, and frankly even I would be bored reading a book on parameters.  Therefore, I decided to break it down into a series of mini guides based on both of your level of experience and then add some separate resources that break them down.  That way you can get quick overviews or go directly into the areas you need.  In this article, I'll just cover the basics.
                 </p>
 
                 <p>
-                <img src="images/wallhead-1000.jpg" 
-                     srcset="images/wallhead-2000.jpg 2000w, images/wheel-1000.jpg 1000w, images/wallhead-500.jpg 500w" 
+                <img src="images/thumbs/single/parametrics/wallhead-1000.jpg" 
+                     srcset="images/thumbs/single/parametrics/wallhead-2000.jpg 2000w, images/wheel-1000.jpg 1000w, images/thumbs/single/parametrics/wallhead-500.jpg 500w" 
                      sizes="(max-width: 2000px) 100vw, 2000px" alt="">
                 </p>
 
-                <h2>Large Heading</h2>
+                <h2>Revit Parameters</h2>
+                <h3>What are Revit Parameters?</h3>
+                
+                <p>For Revit, Parameters are the Information portion of the acronym BIM.  To say that they are the backbone of Revit would be an understatement.  They are more like a combination of the bones, muscular system, and the brain.  They are used to control and define everything in and about the Revit model.</p>
 
-                <p>Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus <a href="http://#">omnis voluptas assumenda est</a> id quod maxime placeat facere possimus, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et.</p>
+                <h3>Where are these Parameters located?</h3>
+                
+                <p>In a project, parameters are for the most part found in the Properties Dialogue box in Revit.  If you don’t see this box right click anywhere inside of your view in Revit and select it from the bottom of the drop down.  All of the properties listed where you can use the scroll bar are considered “Instance Parameters.”  Right above the scroll bar you will see a button labeled Edit Type.  When you click this button a dialogue box called Type Properties will open.  Everything in here is considered a “Type Parameters.”  I will explain the difference between those later.  If you are getting started in Revit and diving in to help out on a project, you should be able to do pretty much everything you need to do with parameters in this area.</p>
 
-                <blockquote><p>This is a simple example of a styled blockquote. A blockquote tag typically specifies a section that is quoted from another source of some sort, or highlighting text in your post.</p></blockquote>
+                <h2>Revit Parameter Types</h2>
 
-                <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
+                <p>As mentioned previously, understanding parameter types can be quite confusing.  Revit has types of parameter types which have their own parameter types, and sub types.  Yes it's that confusing.  For this post, I will list out the "Over Arching" Parameter Types.  Every other parameter type will fall into one of the following types of parameters.
 
-                <h3>Smaller Heading</h3>
 
-                <p>Dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-
-<pre><code>
-    code {
-        font-size: 1.4rem;
-        margin: 0 .2rem;
-        padding: .2rem .6rem;
-        white-space: nowrap;
-        background: #F1F1F1;
-        border: 1px solid #E1E1E1;
-        border-radius: 3px;
-    }
-</code></pre>
-
-                <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
+                <h4>The "Overarching" Parameter Types</h4>
 
                 <ul>
-                    <li>Donec nulla non metus auctor fringilla.
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </li>
-                    <li>Donec nulla non metus auctor fringilla.</li>
-                    <li>Donec nulla non metus auctor fringilla.</li>
+                    <li>System Parameters</li>
+                    <li>Family Parameters</li>
+                    <li>Project Parameters</li>
+                    <li>Shared Parameters</li>
+                    <li>Global Parameters</li>
                 </ul>
 
-                <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
+                <p>In the upcoming weeks, I'll provide links to all of the mini guides I create on Parameters.</p>
 
                 <p class="s-content__tags">
                     <span>Post Tags</span>
@@ -214,29 +200,96 @@
                         <a href="category-practices.html">Best Practices</a>
                     </span>
                 </p> <!-- end s-content__tags -->
-
+                
+    </section> <!-- s-content -->
+    
     <!-- s-extra
     ================================================== -->
-               
+    <section class="s-extra">
+
+        <div class="row top">
+
+            <div class="col-eight md-six tab-full popular">
+                <h3>Popular Posts</h3>
+
+                <div class="block-1-2 block-m-full popular__posts">
+                    <article class="col-block popular__post">
+                        <a href="revit-floors.html" class="popular__thumb">
+                            <img src="images/thumbs/small/archwork-150.jpg" alt="">
+                        </a>
+                        <h5><a href="revit-floors.html">Revit Floors & Slab Edges.</a></h5>
+                        <section class="popular__meta">
+                                <span class="popular__date"><span></span> <time datetime="2017-12-19">Dec 19, 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="rtimesavers.html" class="popular__thumb">
+                            <img src="images/thumbs/small/time-150.jpg" alt="">
+                        </a>
+                        <h5><a href="rtimesavers.html">Time saving Tips for Revit.</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span></span> <time datetime="2017-12-18">Dec 18, 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="parametric-conundrum.html" class="popular__thumb">
+                            <img src="images/thumbs/small/confused-150.jpg" alt="">
+                        </a>
+                        <h5><a href="parametric-conundrum.html">The Parametric Conundrum.</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span></span> <time datetime="2017-12-16">Dec 16, 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="intro-families.html" class="popular__thumb">
+                            <img src="images/thumbs/small/mixedreality-150.jpg" alt="">
+                        </a>
+                        <h5><a href="intro-families.html">Introduction to Revit Families.</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span></span> <time datetime="2017-12-16">Dec 16, 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="parameters-biglist.html" class="popular__thumb">
+                            <img src="images/thumbs/small/bluemodel-150.jpg" alt="">
+                        </a>
+                        <h5><a href="parameters-biglist.html">Revit Parameters: The BIG List.</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span></span> <time datetime="2017-12-14">Dec 14, 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="rtypnotes.html" class="popular__thumb">
+                            <img src="images/thumbs/small/idea-150.jpg" alt="">
+                        </a>
+                        <h5><a href="rtypnotes.html">There has to be a better way! Typical Notes in Revit.</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span></span> <time datetime="2017-12-12">Dec 12, 2017</time></span>
+                        </section>
+                    </article>
+                </div> <!-- end popular_posts -->
+            </div> <!-- end popular -->
+                           
             <div class="col-four md-six tab-full about">
-                <h3>About Philosophy</h3>
+                <h3>About Revit Tailor</h3>
 
                 <p>
-                Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+               I believe that there is no one size fits all solution for people on the way we do things.  In Revit, there are numerous ways that you can go about changing, documenting, and designing your project.  The best solution for you however is one that's tailored the way you work, the way you think, and your specific project.  Here on Revit Tailor I plan to give you information to help you come up with a workflow that's best for you by providing tips, tricks, and examples of some unique ways to solve various problems in Revit.
                 </p>
 
                 <ul class="about__social">
                     <li>
-                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="fb.me/RevitTailor"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="www.linkedin.com/in/walter-mason"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://plus.google.com/115928546801133212642"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="www.pinterest.com/
+revittailor"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                     </li>
                 </ul> <!-- end header__social -->
             </div> <!-- end about -->
@@ -261,7 +314,7 @@
 
     <!-- s-footer
     ================================================== -->
-    <footer class="s-footer">
+  <footer class="s-footer">
 
         <div class="s-footer__main">
             <div class="row">
